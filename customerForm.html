@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Customer Form</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/all.js"></script>
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- My css -->
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="bg-warning">
+  <header class="p-5 bg-success">
+    <h1 class="display-4 text-light text-capitalize">customer form</h1>
+  </header>
+  <section id="customerForm p-5">
+      <div class="container mt-3">
+          <div class="row my-3">
+              <div class="card col-sm-6 mx-auto text-center bg-secondary p-3">
+                  <div class="card-header">
+                    <h3 class="card-title text-uppercase">
+                        <strong>create new customer</strong>
+                    </h3>
+                  </div>
+
+                  <!-- form -->
+                  <form>
+                    <div class="form-group mt-4">
+                      <input type="text" class="form-control form-control-lg" 
+                      placeholder="Full Name" id="fullName" required>
+                      <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+
+                    <div class="form-group mt-4">
+                      <input type="text" class="form-control" placeholder="CPR" id="cpr" 
+                      pattern="[0-9]{9}" title="CPR number is 9 digits long."required>
+                      <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+    
+                    <div class="form-group">
+                      <input type="email" class="form-control" id="email" placeholder="EMAIL">
+                    </div>
+    
+                    <div class="form-group">
+                      <input type="tel" class="form-control" id="phone" placeholder="PHONE"
+                      pattern="[0-9]{8}" title="Bahraini phone number is 8 digits long">
+                    </div>
+                    
+    
+                    <button type="submit" class="btn btn-block btn-outline-warning text-uppercase">
+                      create customer
+                    </button>
+                  </form>
+                  <!-- end form -->
+              </div>
+              <!-- end of card -->
+          </div>
+      </div>
+  </section>
+  <!-- jquery -->
+  <script src="./js/jquery-3.5.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
