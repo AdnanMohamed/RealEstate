@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Form</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/all.js"></script>
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- My css -->
+    <link rel="stylesheet" href="propertyForm.css">
+</head>
+<body class="bg-warning">
+  <header class="p-5 bg-success">
+    <h1 class="display-4 text-light text-capitalize">property form</h1>
+  </header>
+  <section id="customerForm p-5">
+      <div class="container mt-3">
+          <div class="row my-3">
+              <div class="card col-10 col-sm-6 mx-auto text-center bg-secondary p-3">
+                  <div class="card-header">
+                    <h3 class="card-title text-uppercase">
+                        <strong>create property</strong>
+                    </h3>
+                  </div>
+
+                  <!-- form -->
+                  <form>
+                    <div class="form-group mt-4">
+                      <input type="text" class="form-control" 
+                      placeholder="Property ID" id="propertyID" required>
+                      <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <label class="input-group-text" for="owner">Owner:</label>
+                        </div>
+                        <select class="custom-select" id="owner" required>
+                          <option value="">Select Owner</option>
+                          <option value="1">Owner1</option>
+                          <option value="2">Owner2</option>
+                          <option value="3">Owner3</option>
+                        </select>
+
+                        <div class="input-group-append">
+                            <a href="customerForm.html" class="btn btn-primary">create new owner</a>
+                        </div>
+                      </div>
+
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                         <label class="input-group-text" for="propertyType">Property Type:</label>
+                        </div>
+                        <select class="custom-select" id="propertyType" required>
+                         <option value="">Select Type:</option>
+                         <option value="landscape">Landscape</option>
+                         <option value="house">House</option>
+                        </select>
+                      </div>
+
+                      <div class="form-group mt-4">
+                        <input type="url" class="form-control" 
+                        placeholder="Location URL" id="location">
+                      </div>                      
+    
+                    <button type="submit" class="btn btn-block btn-outline-warning text-uppercase">
+                      create property
+                    </button>
+                  </form>
+                  <!-- end form -->
+              </div>
+              <!-- end of card -->
+          </div>
+      </div>
+  </section>
+  <!-- jquery -->
+  <script src="./js/jquery-3.5.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
