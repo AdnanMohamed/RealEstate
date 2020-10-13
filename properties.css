@@ -1,0 +1,15 @@
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+td>a {
+    color: inherit;
+}
+
+td>a:hover{
+    color: rgba(237, 228, 47, 1);
+}
+
+td {
+    font-size: 1.2rem;
+}
