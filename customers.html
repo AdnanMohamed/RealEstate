@@ -16,19 +16,71 @@
 </head>
 <body class="bg-info">
 
-  <header class="p-5 bg-success">
+  <!-- <header class="p-5 bg-success">
     <h1 class="display-4 text-light text-capitalize">my customers</h1>
-  </header>  
+  </header>   -->
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+      <!-- Brand -->
+      <a class="navbar-brand text-uppercase" href="main.html">
+        alsagheer real estate
+      </a>
+    
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link text-capitalize text-light nav-text" href="main.html">
+              main
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-capitalize text-light" href="customers.html">
+              <i class="fas fa-users fa-2x text-warning"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-capitalize text-light" href="deals.html">
+              <i class="fas fa-handshake fa-2x hand-color"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-capitalize text-light" href="properties.html">
+              <i class="fas fa-home fa-2x text-info"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav> 
+     <!-- end of navbar -->
 
   <section id="customers p-5">
-   <div class="container mt-5">
-     <div class="row">
+   <div class="container">
+
+    <!-- title -->
+     <div class="row text-center title-margin">
+     <div class="col">
+      <h1 class="display-4 text-uppercase mb-0 text-light">
+        <strong>customers</strong>
+        <span><i class="fas fa-address-book text-warning"></i></span>
+      </h1>
+     </div>
+     </div>
+     <!-- end of title -->
+
+     <div class="row mt-5">
         <div class="col-md-10 py-3 mx-auto">
 
             <a href="customerForm.html" class="btn btn-success mb-2">
                 <strong>+ new customer </strong></a>
 
-            <table class="table table-hover">
+            <table class="table table-hover cells-color">
                 <thead class="thead-dark">
                   <tr>
                     <th>First/Last Name</th>

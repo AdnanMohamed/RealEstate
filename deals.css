@@ -37,3 +37,20 @@ td {
     border-radius: 50%;
     display: inline-block;
 }
+
+.nav-text {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.cells-color {
+    background-color: rgba(155, 88, 209, 1);
+}
+
+.hand-color {
+    color: rgba(245, 152, 66, 255);
+}
+
+.title-margin {
+    margin-top: 5rem;
+}
